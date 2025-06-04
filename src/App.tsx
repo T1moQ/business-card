@@ -1,11 +1,7 @@
 import './App.css'
+import { MainPage } from './pages/main-page'
 
 function App() {
-	return (
-		<>
-			<h1 className="text-5xl">AZAZAZAZ</h1>
-		</>
-	)
+	return <MainPage />
 }
-
 export default App
