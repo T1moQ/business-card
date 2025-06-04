@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Berthold City';
+	src: url('/public/fonts/BertholdCityBold.otf') format('opentype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Berthold City';
+	src: url('/public/fonts/BertholdCityBoldItalic.otf') format('opentype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+html {
+	@apply scroll-smooth min-h-[100svh];
+	font-family: 'Berthold City', sans-serif;
+}
