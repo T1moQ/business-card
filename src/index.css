@@ -19,7 +19,7 @@ html {
 	font-family: 'Berthold City', sans-serif;
 }
 
-.hardcore-fade {
+/* .hardcore-fade {
 	@apply background: #7C2955;
 	background: linear-gradient(
 		180deg,
@@ -28,4 +28,4 @@ html {
 		rgba(213, 70, 54, 1) 53%,
 		rgba(184, 28, 68, 1) 100%
 	);
-}
+} */
