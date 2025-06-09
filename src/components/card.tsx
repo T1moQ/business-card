@@ -54,25 +54,25 @@ export const Card: FC = () => {
 					</p>
 					<a
 						href="https://t.me/xtimoqx"
-						className="base-regular text-2xl hover:text-fuchsia-400"
+						className="base-regular text-2xl hover:text-fuchsia-400 hover:text-[26px] min-h-9"
 					>
 						🖤 Telegram
 					</a>
 					<a
 						href="https://github.com/T1moQ"
-						className="base-regular text-2xl hover:text-fuchsia-400"
+						className="base-regular text-2xl hover:text-fuchsia-400 hover:text-[26px] min-h-9"
 					>
 						🐙 GitHub
 					</a>
 					<a
 						href="https://www.instagram.com/xtimoq?igsh=MWJteW1ydzg3Y2MzeQ%3D%3D&utm_source=qr"
-						className=" base-regular text-2xl hover:text-fuchsia-400"
+						className=" base-regular text-2xl hover:text-fuchsia-400 hover:text-[26px] min-h-9"
 					>
 						📷 Instagram
 					</a>
 					<a
 						href="mailto:timofey.ptichenko@gmail.com"
-						className="base-regular text-2xl  hover:text-fuchsia-400 "
+						className="base-regular text-2xl  hover:text-fuchsia-400 hover:text-[26px] min-h-9"
 					>
 						✉️ Email
 					</a>
