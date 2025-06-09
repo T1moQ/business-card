@@ -74,7 +74,7 @@ export const MainPage: FC = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 3.5, ease: 'easeInOut' }}
-				className="absolute bg-zinc-900 w-[1000px] h-124 rounded-tr-4xl rounded-tl-4xl bottom-0 left-1/2 -translate-x-1/2 px-16 py-12"
+				className="absolute bg-zinc-900 w-[1000px] h-124 rounded-tr-4xl rounded-tl-4xl bottom-0 left-1/2 -translate-x-1/2 pt-10 py-12"
 			>
 				<Card />
 			</motion.div>

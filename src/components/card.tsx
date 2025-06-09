@@ -2,7 +2,7 @@ import type { FC } from 'react'
 
 export const Card: FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-6 text-white max-w-4xl mx-auto px-6">
+		<div className="flex flex-col items-center gap-5 text-white max-w-4xl mx-auto px-6">
 			{/* Заголовок */}
 			<h2 className="text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
 				Hey everyone, I’m{' '}
@@ -17,7 +17,7 @@ export const Card: FC = () => {
 			</p>
 
 			{/* Основной блок */}
-			<div className="flex flex-col lg:flex-row gap-10 w-full mt-4">
+			<div className="flex lg:flex-row gap-10 w-full mt-4">
 				{/* About */}
 				<div className="flex-1 space-y-3 text-center">
 					<p className="uppercase alt-regular tracking-widest text-sm text-gray-400">
@@ -48,31 +48,31 @@ export const Card: FC = () => {
 				</div>
 
 				{/* Contacts */}
-				<div className="flex-1 flex flex-col gap-2 text-sm text-center ">
+				<div className="flex-1 flex flex-col gap-2 text-sm text-center">
 					<p className="uppercase alt-regular tracking-widest text-sm text-gray-400">
 						Shoot `em all
 					</p>
 					<a
 						href="https://t.me/xtimoqx"
-						className="base-regular text-xl  hover:text-fuchsia-400"
+						className="base-regular text-2xl hover:text-fuchsia-400"
 					>
 						🖤 Telegram
 					</a>
 					<a
 						href="https://github.com/T1moQ"
-						className="base-regular text-xl hover:text-fuchsia-400"
+						className="base-regular text-2xl hover:text-fuchsia-400"
 					>
 						🐙 GitHub
 					</a>
 					<a
 						href="https://www.instagram.com/xtimoq?igsh=MWJteW1ydzg3Y2MzeQ%3D%3D&utm_source=qr"
-						className=" base-regular text-xl hover:text-fuchsia-400"
+						className=" base-regular text-2xl hover:text-fuchsia-400"
 					>
 						📷 Instagram
 					</a>
 					<a
 						href="mailto:timofey.ptichenko@gmail.com"
-						className="base-regular text-xl  hover:text-fuchsia-400 "
+						className="base-regular text-2xl  hover:text-fuchsia-400 "
 					>
 						✉️ Email
 					</a>
@@ -81,7 +81,7 @@ export const Card: FC = () => {
 
 			<blockquote className="pt-4 text-3xl alt-regular font-semibold tracking-wide text-center">
 				Let’s cooperate and make something{' '}
-				<span className="text-fuchsia-600 font-semibold">bold.</span>
+				<span className="text-fuchsia-600 font-semibold">bold!</span>
 			</blockquote>
 		</div>
 	)
