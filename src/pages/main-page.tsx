@@ -1,25 +1,28 @@
 import type { FC } from 'react'
 import { motion } from 'framer-motion'
-// import { Card } from '../components/card'
-// import Lightning from '../motion/Backgrounds/Lightning/Lightning'
+import { Card } from '../components/card'
+import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 
 export const MainPage: FC = () => {
 	return (
-		<main className="min-h-screen overflow-hidden bg-black relative">
-			{/* <motion.img
+		<main
+			className="min-h-screen overflow-hidden bg-black relative"
+			style={{ userSelect: 'none' }}
+		>
+			<motion.img
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 3.5, ease: 'easeInOut' }}
+				transition={{ duration: 3, delay: 7, ease: 'easeInOut' }}
 				src="./public/f-name-logo.png"
-				className="w-104 absolute top-10 left-104"
+				className="w-104 absolute top-10 left-104 z-10"
 			/>
 			<motion.img
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 3.5, ease: 'easeInOut' }}
+				transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 				src="./public/l-name-logo.png"
-				className="w-104 absolute top-10 right-106"
-			/> */}
+				className="w-104 absolute top-10 right-106 z-10"
+			/>
 			<motion.img
 				initial={{ opacity: 0, y: '100vh' }}
 				animate={{
@@ -44,7 +47,7 @@ export const MainPage: FC = () => {
 					delay: 1,
 					ease: ['easeIn', 'linear', 'easeOut'],
 				}}
-				className="absolute inset-x-0 m-auto top-[360px] w-[1100px] h-[560px] rounded-tl-4xl rounded-tr-4xl overflow-visible"
+				className="absolute inset-x-0 m-auto top-[360px] w-[1100px] h-[560px] rounded-tl-4xl rounded-tr-4xl overflow-visible z-10"
 			>
 				<img
 					src="./public/ripped.png"
@@ -58,19 +61,15 @@ export const MainPage: FC = () => {
 					src="./public/ripped.png"
 					className="absolute w-[570px] rotate-270 top-72 -right-71"
 				/>
+				<div className="absolute bg-zinc-900 w-[1000px] h-124 rounded-tr-4xl rounded-tl-4xl bottom-0 left-1/2 -translate-x-1/2 pt-10 py-12">
+					<Card />
+				</div>
 			</motion.div>
-			{/* <motion.div
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 3.5, ease: 'easeInOut' }}
-				className="absolute bg-zinc-900 w-[1000px] h-124 rounded-tr-4xl rounded-tl-4xl bottom-0 left-1/2 -translate-x-1/2 pt-10 py-12"
-			>
-				<Card />
-			</motion.div> */}
-			{/* <motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 0.5, ease: 'easeIn' }}
+				transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
+				className="z-0"
 			>
 				<div className="w-1/3 h-[950px] absolute top-0 right-0 z-0">
 					<Lightning
@@ -90,7 +89,7 @@ export const MainPage: FC = () => {
 						size={1}
 					/>
 				</div>
-			</motion.div> */}
+			</motion.div>
 		</main>
 	)
 }
