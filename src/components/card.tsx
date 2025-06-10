@@ -12,8 +12,8 @@ export const Card: FC = () => {
 			{/* Подзаголовок */}
 			<p className="text-xl lg:text-2xl base-regular text-center max-w-2xl">
 				Frontend Developer with a{' '}
-				<span className="font-semibold">Hardcore Spirit</span>. I build
-				interfaces that hit hard and work clean.
+				<span className="font-semibold">Hardcore Spirit</span>
+				<br />I build interfaces that hit hard and work clean
 			</p>
 
 			{/* Основной блок */}
