@@ -2,7 +2,7 @@ import type { FC } from 'react'
 
 export const Card: FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-5 text-white max-w-4xl mx-auto px-6">
+		<div className="flex flex-col items-center gap-5 text-white w-full px-6">
 			{/* Заголовок */}
 			<h2 className="text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
 				Hey everyone, I’m{' '}

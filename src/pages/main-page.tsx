@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { motion } from 'framer-motion'
-// import { Card } from '../components/card'
+import { Card } from '../components/card'
 // import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 
 export const MainPage: FC = () => {
@@ -58,26 +58,27 @@ export const MainPage: FC = () => {
 						delay: 1,
 						ease: ['easeIn', 'linear', 'easeOut'],
 					}}
-					className="relative z-10 mt-[-90px] flex flex-col items-center"
+					className="relative z-10 mt-[-95px] flex flex-col items-center w-[1200px]"
 				>
 					{/* Top Ripped */}
 					<img src="./public/ripped.png" className="w-[1100px] rotate-180" />
 					{/* Card */}
-					<div className="relative bg-zinc-900 w-[1000px] h-124 rounded-tr-4xl rounded-tl-4xl pt-10 py-12 flex justify-center">
-						{/* <Card /> */}
+					<div className="flex items-center gap-8 -mt-7">
+						<img
+							src="./public/ripped-side.png"
+							className="w-[50px] h-auto rotate-180 -mt-2"
+						/>
+						<div className="relative w-[1000px] bg-zinc-900 h-128 rounded-tr-4xl rounded-tl-4xl pt-10 px-12 flex justify-center">
+							<Card />
+						</div>
+						<img
+							src="./public/ripped-side.png"
+							className="h-[570px] -mt-2 mr-5"
+						/>
 					</div>
 
 					{/* Side ripped */}
-					<div className="relative w-[1100px] h-max flex justify-between -mt-4">
-						<img
-							src="./public/ripped.png"
-							className="w-[570px] rotate-90 -ml-24"
-						/>
-						<img
-							src="./public/ripped.png"
-							className="w-[570px] rotate-270 -mr-24"
-						/>
-					</div>
+					{/* <div className="w-[1100px] flex justify-between -mt-4"></div> */}
 				</motion.div>
 			</div>
 			{/* <motion.img
