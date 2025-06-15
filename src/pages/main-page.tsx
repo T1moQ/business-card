@@ -6,10 +6,10 @@ import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 export const MainPage: FC = () => {
 	return (
 		<main
-			className="min-h-screen overflow-hidden bg-black"
+			className="h-screen overflow-hidden bg-black"
 			style={{ userSelect: 'none' }}
 		>
-			<div className="relative z-10 flex flex-col items-center pt-8">
+			<div className="relative z-10 flex flex-col items-center pt-8 origin-top scale-[0.75]">
 				<div className="flex justify-between items-start max-w-screen-xl mx-auto">
 					{/* Name */}
 					<motion.img
@@ -17,14 +17,14 @@ export const MainPage: FC = () => {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 						src="./public/f-name-logo.png"
-						className="w-104"
+						className="w-124"
 					/>
 					{/* Char */}
 					<motion.div
 						initial={{ opacity: 0, y: '100vh' }}
 						animate={{
 							opacity: [0, 1, 1, 1],
-							y: ['100vh', '60vh', '60vh', '0vh'],
+							y: ['100vh', '80vh', '80vh', '0vh'],
 						}}
 						transition={{
 							duration: 6,
@@ -42,7 +42,7 @@ export const MainPage: FC = () => {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 						src="./public/l-name-logo.png"
-						className="w-104"
+						className="w-124"
 					/>
 				</div>
 				{/* Text */}
@@ -50,7 +50,7 @@ export const MainPage: FC = () => {
 					initial={{ opacity: 0, y: '100vh' }}
 					animate={{
 						opacity: [0, 1, 1, 1],
-						y: ['100vh', '60vh', '60vh', '0vh'],
+						y: ['100vh', '80vh', '80vh', '0vh'],
 					}}
 					transition={{
 						duration: 6,
@@ -68,7 +68,7 @@ export const MainPage: FC = () => {
 							src="./public/ripped-side.png"
 							className="w-[50px] h-auto rotate-180 -mt-2"
 						/>
-						<div className="relative w-[1000px] bg-zinc-900 h-128 rounded-tr-4xl rounded-tl-4xl pt-10 px-12 flex justify-center">
+						<div className="relative w-[1000px] bg-zinc-900 h-130 rounded-tr-4xl rounded-tl-4xl pt-10 px-12 flex justify-center">
 							<Card />
 						</div>
 						<img
@@ -80,14 +80,14 @@ export const MainPage: FC = () => {
 							animate={{ opacity: 1 }}
 							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
 							src="./public/skull1.png"
-							className="absolute z-30 w-[200px] -left-0 -rotate-13 -bottom-12"
+							className="absolute z-30 w-[270px] -left-12 -rotate-25 -bottom-15"
 						/>
 						<motion.img
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
 							src="./public/skull1.png"
-							className="absolute z-30 w-[200px] -right-0 -bottom-12 scale-x-[-1] rotate-13"
+							className="absolute z-30 w-[250px] -right-12 -bottom-12 scale-x-[-1] rotate-25"
 						/>
 					</div>
 				</motion.div>
