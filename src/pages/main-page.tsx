@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { motion } from 'framer-motion'
 import { Card } from '../components/card'
-// import Lightning from '../motion/Backgrounds/Lightning/Lightning'
+import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 
 export const MainPage: FC = () => {
 	return (
@@ -73,35 +73,32 @@ export const MainPage: FC = () => {
 						</div>
 						<img
 							src="./public/ripped-side.png"
-							className="h-[570px] -mt-2 mr-5"
+							className="h-[570px] mt-3 mr-2"
+						/>
+						<motion.img
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
+							src="./public/skull1.png"
+							className="absolute z-30 w-[200px] -left-0 -rotate-13 -bottom-12"
+						/>
+						<motion.img
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
+							src="./public/skull1.png"
+							className="absolute z-30 w-[200px] -right-0 -bottom-12 scale-x-[-1] rotate-13"
 						/>
 					</div>
-
-					{/* Side ripped */}
-					{/* <div className="w-[1100px] flex justify-between -mt-4"></div> */}
 				</motion.div>
 			</div>
-			{/* <motion.img
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-				src="./public/skull1.png"
-				className="absolute z-20 w-[200px] -bottom-13 left-84 -rotate-13"
-			/>
-			<motion.img
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-				src="./public/skull1.png"
-				className="absolute z-20 w-[200px] -bottom-13 right-84 scale-x-[-1] rotate-13"
-			/> */}
-			{/* <motion.div
+			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 9, ease: 'easeIn' }}
-				className="z-0"
+				className="absolute inset-0 z-0 h-screen pointer-events-none"
 			>
-				<div className="w-1/3 h-[950px] absolute top-0 right-0 z-0">
+				<div className="w-1/3 h-full absolute top-0 right-0 z-0">
 					<Lightning
 						hue={280}
 						xOffset={-0.5}
@@ -110,7 +107,7 @@ export const MainPage: FC = () => {
 						size={1}
 					/>
 				</div>
-				<div className="w-1/3 h-[950px] absolute top-0 left-0 rotate-180 z-0">
+				<div className="w-1/3 h-full absolute top-0 left-0 rotate-180 z-0">
 					<Lightning
 						hue={280}
 						xOffset={-0.5}
@@ -119,7 +116,7 @@ export const MainPage: FC = () => {
 						size={1}
 					/>
 				</div>
-			</motion.div> */}
+			</motion.div>
 		</main>
 	)
 }

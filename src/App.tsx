@@ -9,7 +9,7 @@ function App() {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setShowCursor(true)
-		}, 9000) // 9 секунд
+		}, 9000)
 		return () => clearTimeout(timer)
 	}, [])
 
