@@ -5,7 +5,10 @@ import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 
 export const MainPage: FC = () => {
 	return (
-		<main className="bg-black" style={{ userSelect: 'none' }}>
+		<main
+			className="bg-black overflow-hidden h-[100svh]"
+			style={{ userSelect: 'none' }}
+		>
 			<div className="relative z-10 flex flex-col items-center xl:pt-6">
 				<div className="flex justify-between items-start max-w-screen-2xl mx-auto">
 					{/* Name */}
@@ -21,7 +24,7 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0, y: '100vh' }}
 						animate={{
 							opacity: [0, 1, 1, 1],
-							y: ['100vh', '60vh', '60vh', '-4vh'],
+							y: ['100vh', '70vh', '70vh', '-4vh'],
 						}}
 						transition={{
 							duration: 6,
@@ -47,7 +50,7 @@ export const MainPage: FC = () => {
 					initial={{ opacity: 0, y: '100vh' }}
 					animate={{
 						opacity: [0, 1, 1, 1],
-						y: ['100vh', '60vh', '60vh', '-4vh'],
+						y: ['100vh', '70vh', '70vh', '-4vh'],
 					}}
 					transition={{
 						duration: 6,
