@@ -5,26 +5,23 @@ import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 
 export const MainPage: FC = () => {
 	return (
-		<main
-			className="h-screen overflow-hidden bg-black"
-			style={{ userSelect: 'none' }}
-		>
-			<div className="relative z-10 flex flex-col items-center pt-8 origin-top scale-[0.75]">
-				<div className="flex justify-between items-start max-w-screen-xl mx-auto">
+		<main className="bg-black" style={{ userSelect: 'none' }}>
+			<div className="relative z-10 flex flex-col items-center xl:pt-6">
+				<div className="flex justify-between items-start max-w-screen-2xl mx-auto">
 					{/* Name */}
 					<motion.img
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 						src="./public/f-name-logo.png"
-						className="w-124"
+						className="xl:w-96"
 					/>
 					{/* Char */}
 					<motion.div
 						initial={{ opacity: 0, y: '100vh' }}
 						animate={{
 							opacity: [0, 1, 1, 1],
-							y: ['100vh', '80vh', '80vh', '0vh'],
+							y: ['100vh', '60vh', '60vh', '-4vh'],
 						}}
 						transition={{
 							duration: 6,
@@ -32,9 +29,9 @@ export const MainPage: FC = () => {
 							ease: ['easeIn', 'linear', 'easeOut'],
 							delay: 1,
 						}}
-						className="flex justify-center items-end w-full max-w-screen-md mx-auto -mr-20 -ml-20 z-20"
+						className="flex justify-center items-end w-full max-w-screen-xl mx-auto -mr-16 -ml-16 z-20"
 					>
-						<img src="./public/char.png" className="w-[400px]" />
+						<img src="./public/char.png" className="xl:w-[300px]" />
 					</motion.div>
 					{/* Last Name */}
 					<motion.img
@@ -42,7 +39,7 @@ export const MainPage: FC = () => {
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 						src="./public/l-name-logo.png"
-						className="w-124"
+						className="xl:w-96"
 					/>
 				</div>
 				{/* Text */}
@@ -50,7 +47,7 @@ export const MainPage: FC = () => {
 					initial={{ opacity: 0, y: '100vh' }}
 					animate={{
 						opacity: [0, 1, 1, 1],
-						y: ['100vh', '80vh', '80vh', '0vh'],
+						y: ['100vh', '60vh', '60vh', '-4vh'],
 					}}
 					transition={{
 						duration: 6,
@@ -63,31 +60,32 @@ export const MainPage: FC = () => {
 					{/* Top Ripped */}
 					<img src="./public/ripped.png" className="w-[1100px] rotate-180" />
 					{/* Card */}
-					<div className="flex items-center gap-8 -mt-7">
+					<div className="flex items-center xl:gap-3 xl:-mt-26">
 						<img
 							src="./public/ripped-side.png"
-							className="w-[50px] h-auto rotate-180 -mt-2"
+							className="w-[50px] h-auto rotate-180 mt-18 -ml-10"
 						/>
-						<div className="relative w-[1000px] bg-zinc-900 h-130 rounded-tr-4xl rounded-tl-4xl pt-10 px-12 flex justify-center">
+						<div className="relative w-[1040px] pb-10 bg-zinc-900 rounded-tr-4xl rounded-tl-4xl xl:pt-6 px-12 flex justify-center">
 							<Card />
 						</div>
 						<img
 							src="./public/ripped-side.png"
-							className="h-[570px] mt-3 mr-2"
+							className="h-[570px] mt-20 -mr-5"
+						/>
+						{/* Skulls */}
+						<motion.img
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
+							src="./public/skull1.png"
+							className="absolute z-30 w-[200px] -left-10 -rotate-25 bottom-14"
 						/>
 						<motion.img
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
 							src="./public/skull1.png"
-							className="absolute z-30 w-[270px] -left-12 -rotate-25 -bottom-15"
-						/>
-						<motion.img
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-							src="./public/skull1.png"
-							className="absolute z-30 w-[250px] -right-12 -bottom-12 scale-x-[-1] rotate-25"
+							className="absolute z-30 w-[220px] -right-10 bottom-14 scale-x-[-1] rotate-25"
 						/>
 					</div>
 				</motion.div>
