@@ -1,8 +1,9 @@
+import { motion } from 'framer-motion'
 import type { FC } from 'react'
 
 export const Card: FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-2 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-2 xl:px-20">
+		<div className="flex flex-col items-center gap-2 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-2 xl:px-20 lg:w-full">
 			{/* Заголовок */}
 			<h2 className="text-lg md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
 				Hey everyone, I'm{' '}
@@ -17,13 +18,13 @@ export const Card: FC = () => {
 			</p>
 
 			{/* Основной блок */}
-			<div className="flex flex-col md:flex-row gap-4 md:gap-2 lg:gap-3 xl:gap-4 w-full mt-2 md:mt-1 xl:mt-4">
+			<div className="flex flex-col md:flex-row gap-4 md:gap-2 lg:gap-6 xl:gap-4 mt-2 md:mt-1 xl:mt-4 lg:w-full">
 				{/* About */}
-				<div className="flex-1 space-y-1 leading-relaxed md:space-y-2 text-center md:text-left flex flex-col items-center xl:gap-2 xl:min-w-120">
+				<div className="flex-1 space-y-1 leading-relaxed md:space-y-2 text-center md:text-left flex flex-col items-center xl:gap-2 xl:min-w-120 lg:min-w-120">
 					<p className="uppercase alt-regular tracking-widest text-xs md:text-sm xl:text-lg text-gray-400">
 						Couple things about myself
 					</p>
-					<div className="base-regular text-xs md:text-sm xl:text-[16px] flex flex-col gap-0.5 md:gap-1 xl:gap-1">
+					<div className="base-regular text-xs md:text-sm xl:text-[16px] lg:text-[16px] flex flex-col gap-0.5 md:gap-1 xl:gap-1">
 						<p>
 							Work as a frontend developer at{' '}
 							<a
@@ -51,7 +52,7 @@ export const Card: FC = () => {
 				</div>
 
 				{/* Contacts */}
-				<div className="flex-1 flex flex-col gap-1 md:gap-1 xl:gap-1 xl:text-center md:text-right">
+				<div className="flex-1 flex flex-col gap-1 md:gap-1 xl:gap-1 xl:text-center lg:text-center md:text-right">
 					<p className="uppercase alt-regular tracking-widest text-xs md:text-sm xl:text-lg text-gray-400">
 						Shoot `em all
 					</p>
@@ -82,10 +83,19 @@ export const Card: FC = () => {
 				</div>
 			</div>
 
-			<blockquote className="pt-2 md:pt-2 xl:pt-4 text-base md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-semibold tracking-wide text-center max-w-xs md:max-w-md lg:max-w-lg xl:max-w-none">
+			<blockquote className="pt-2 md:pt-2 xl:pt-4 lg:pt-4 text-base md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-semibold tracking-wide text-center max-w-xs md:max-w-md lg:max-w-xl xl:max-w-none">
 				Let's cooperate and make something{' '}
 				<span className="text-fuchsia-600 font-semibold">bold!</span>
 			</blockquote>
+			<motion.div
+				className="lg:flex mt-4 hidden"
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 3, delay: 10, ease: 'easeIn' }}
+			>
+				<img src="./public/wire.png" alt="" className="w-86" />
+				<img src="./public/wire.png" alt="" className="w-86 rotate-180" />
+			</motion.div>
 		</div>
 	)
 }
