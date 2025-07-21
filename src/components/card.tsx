@@ -3,28 +3,28 @@ import type { FC } from 'react'
 
 export const Card: FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-2 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-2 xl:px-20 lg:w-full">
+		<div className="flex flex-col items-center gap-2 sm:gap-3 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-1 xl:px-20 lg:w-full 2xl:gap-2">
 			{/* Заголовок */}
-			<h2 className="text-lg md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
+			<h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
 				Hey everyone, I'm{' '}
 				<span className="text-fuchsia-400">Timofey Ptichenko</span>
 			</h2>
 
 			{/* Подзаголовок */}
-			<p className="text-sm md:text-lg lg:text-xl xl:text-2xl base-regular text-center max-w-xs md:max-w-md lg:max-w-lg xl:max-w-2xl">
+			<p className="text-md sm:text-lg md:text-lg lg:text-xl xl:text-2xl base-regular text-center max-w-xs md:max-w-md lg:max-w-lg xl:max-w-2xl">
 				Frontend Developer with a{' '}
 				<span className="font-semibold">Hardcore Spirit</span>
 				<br />I build interfaces that hit hard and work clean
 			</p>
 
 			{/* Основной блок */}
-			<div className="flex flex-col md:flex-row gap-4 md:gap-2 lg:gap-6 xl:gap-4 mt-2 md:mt-1 xl:mt-4 lg:w-full">
+			<div className="flex flex-col md:flex-row gap-4 md:gap-4 lg:gap-6 xl:gap-8 mt-2 md:mt-1 xl:mt-4 lg:w-full">
 				{/* About */}
-				<div className="flex-1 space-y-1 leading-relaxed md:space-y-2 text-center md:text-left flex flex-col items-center xl:gap-2 xl:min-w-120 lg:min-w-120">
-					<p className="uppercase alt-regular tracking-widest text-xs md:text-sm xl:text-lg text-gray-400">
+				<div className="flex-1 space-y-1 leading-relaxed md:space-y-2 text-center md:text-center flex flex-col items-center xl:gap-3 2xl:gap-3 xl:min-w-120 lg:min-w-120 md:min-w-72">
+					<p className="uppercase alt-regular tracking-widest text-xs sm:text-sm md:text-sm xl:text-lg text-gray-400">
 						Couple things about myself
 					</p>
-					<div className="base-regular text-xs md:text-sm xl:text-[16px] lg:text-[16px] flex flex-col gap-0.5 md:gap-1 xl:gap-1">
+					<div className="base-regular text-xs sm:text-sm md:text-sm xl:text-[16px] lg:text-[16px] flex flex-col gap-0.5 md:gap-1 xl:gap-1">
 						<p>
 							Work as a frontend developer at{' '}
 							<a
@@ -52,49 +52,57 @@ export const Card: FC = () => {
 				</div>
 
 				{/* Contacts */}
-				<div className="flex-1 flex flex-col gap-1 md:gap-1 xl:gap-1 xl:text-center lg:text-center md:text-right">
-					<p className="uppercase alt-regular tracking-widest text-xs md:text-sm xl:text-lg text-gray-400">
+				<div className="flex-1 flex flex-col gap-1 md:gap-2 xl:gap-1 text-center">
+					<p className="uppercase alt-regular tracking-widest text-xs sm:text-sm md:text-sm xl:text-lg text-gray-400">
 						Shoot `em all
 					</p>
 					<a
 						href="https://t.me/xtimoqx"
-						className="base-regular text-sm md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
+						className="base-regular text-sm sm:text-lg md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
 					>
 						🖤 Telegram
 					</a>
 					<a
 						href="https://github.com/T1moQ"
-						className="base-regular text-sm md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
+						className="base-regular text-sm sm:text-lg md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
 					>
 						🐙 GitHub
 					</a>
 					<a
 						href="https://www.instagram.com/xtimoq?igsh=MWJteW1ydzg3Y2MzeQ%3D%3D&utm_source=qr"
-						className="base-regular text-sm md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
+						className="base-regular text-sm sm:text-lg md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
 					>
 						📷 Instagram
 					</a>
 					<a
 						href="mailto:timofey.ptichenko@gmail.com"
-						className="base-regular text-sm md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
+						className="base-regular text-sm sm:text-lg md:text-lg lg:text-xl xl:text-2xl hover:text-fuchsia-400 transition-all duration-200 hover:scale-105 md:hover:text-[20px] lg:hover:text-[22px] xl:hover:text-[26px] min-h-6 md:min-h-7 lg:min-h-8 xl:min-h-9"
 					>
 						✉️ Email
 					</a>
 				</div>
 			</div>
 
-			<blockquote className="pt-2 md:pt-2 xl:pt-4 lg:pt-4 text-base md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-semibold tracking-wide text-center max-w-xs md:max-w-md lg:max-w-xl xl:max-w-none">
+			<blockquote className="pt-0 w-full md:pt-10 xl:pt-2 lg:pt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-semibold tracking-wide text-center max-w-xs md:max-w-md lg:max-w-xl xl:max-w-none">
 				Let's cooperate and make something{' '}
 				<span className="text-fuchsia-600 font-semibold">bold!</span>
 			</blockquote>
 			<motion.div
-				className="lg:flex mt-4 hidden"
+				className="sm:flex -mt-4 lg:mt-10 md:mt-8 xl:-mt-4 hidden overflow-hidden 2xl:hidden"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 10, ease: 'easeIn' }}
 			>
-				<img src="./public/wire.png" alt="" className="w-86" />
-				<img src="./public/wire.png" alt="" className="w-86 rotate-180" />
+				<img
+					src="./public/wire.png"
+					alt=""
+					className="w-72 xl:w-96 lg:w-96 md:w-58"
+				/>
+				<img
+					src="./public/wire.png"
+					alt=""
+					className="w-72 xl:w-100 lg:w-86 md:w-58 rotate-180"
+				/>
 			</motion.div>
 		</div>
 	)
