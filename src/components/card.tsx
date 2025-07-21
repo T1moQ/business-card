@@ -3,9 +3,9 @@ import type { FC } from 'react'
 
 export const Card: FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-2 sm:gap-3 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-1 xl:px-20 lg:w-full 2xl:gap-2">
+		<div className="flex flex-col items-center gap-1.5 sm:gap-2 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-1 xl:px-20 lg:w-full 2xl:gap-2">
 			{/* Заголовок */}
-			<h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
+			<h2 className="text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl  alt-regular font-bold leading-tight text-center tracking-tight">
 				Hey everyone, I'm{' '}
 				<span className="text-fuchsia-400">Timofey Ptichenko</span>
 			</h2>
@@ -20,11 +20,11 @@ export const Card: FC = () => {
 			{/* Основной блок */}
 			<div className="flex flex-col md:flex-row gap-4 md:gap-4 lg:gap-6 xl:gap-8 mt-2 md:mt-1 xl:mt-4 lg:w-full">
 				{/* About */}
-				<div className="flex-1 space-y-1 leading-relaxed md:space-y-2 text-center md:text-center flex flex-col items-center xl:gap-3 2xl:gap-3 xl:min-w-120 lg:min-w-120 md:min-w-72">
+				<div className="flex-1 space-y-1 leading-relaxed md:space-y-2 text-center md:text-center flex flex-col items-center xl:gap-3 2xl:gap-3 3xl:min-w-140 xl:min-w-120 lg:min-w-120 md:min-w-72">
 					<p className="uppercase alt-regular tracking-widest text-xs sm:text-sm md:text-sm xl:text-lg text-gray-400">
 						Couple things about myself
 					</p>
-					<div className="base-regular text-xs sm:text-sm md:text-sm xl:text-[16px] lg:text-[16px] flex flex-col gap-0.5 md:gap-1 xl:gap-1">
+					<div className="base-regular text-xs sm:text-sm md:text-sm xl:text-[16px] lg:text-[16px] 3xl:text-lg flex flex-col gap-0.5 md:gap-1 xl:gap-1">
 						<p>
 							Work as a frontend developer at{' '}
 							<a
@@ -88,16 +88,20 @@ export const Card: FC = () => {
 				<span className="text-fuchsia-600 font-semibold">bold!</span>
 			</blockquote>
 			<motion.div
-				className="sm:flex -mt-4 lg:mt-10 md:mt-8 xl:-mt-4 hidden overflow-hidden 2xl:hidden"
+				className="sm:flex -mt-4 lg:mt-5 md:mt-8 xl:-mt-4 3xl:mt-5 hidden xl:hidden overflow-hidden 3xl:flex"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 10, ease: 'easeIn' }}
 			>
-				<img src="/wire.png" alt="" className="w-72 xl:w-96 lg:w-96 md:w-58" />
 				<img
 					src="/wire.png"
 					alt=""
-					className="w-72 xl:w-100 lg:w-86 md:w-58 rotate-180"
+					className="w-72 xl:w-96 lg:w-96 md:w-58 3xl:w-[500px]"
+				/>
+				<img
+					src="/wire.png"
+					alt=""
+					className="w-72 xl:w-100 lg:w-86 md:w-58 3xl:w-[500px] rotate-180"
 				/>
 			</motion.div>
 		</div>
