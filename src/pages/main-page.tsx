@@ -6,7 +6,7 @@ import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 export const MainPage: FC = () => {
 	return (
 		<main
-			className="bg-black overflow-hidden h-[100svh]"
+			className="bg-black xs:overflow-auto overflow-hidden min-h-[100svh]"
 			style={{ userSelect: 'none' }}
 		>
 			<div className="relative z-10 flex flex-col items-center pt-3 md:pt-18 xl:pt-14 2xl:pt-6 lg:pt-18 sm:pt-12">
