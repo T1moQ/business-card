@@ -93,13 +93,9 @@ export const Card: FC = () => {
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 10, ease: 'easeIn' }}
 			>
+				<img src="/wire.png" alt="" className="w-72 xl:w-96 lg:w-96 md:w-58" />
 				<img
-					src="./public/wire.png"
-					alt=""
-					className="w-72 xl:w-96 lg:w-96 md:w-58"
-				/>
-				<img
-					src="./public/wire.png"
+					src="/wire.png"
 					alt=""
 					className="w-72 xl:w-100 lg:w-86 md:w-58 rotate-180"
 				/>

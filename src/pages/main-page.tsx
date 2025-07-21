@@ -17,7 +17,7 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
-						src="./public/f-name-logo.png"
+						src="/f-name-logo.png"
 						className="w-64 md:w-72 lg:w-80 xl:w-116 2xl:w-96"
 					/>
 					{/* Char */}
@@ -36,7 +36,7 @@ export const MainPage: FC = () => {
 						className="flex justify-center items-end w-full max-w-screen-xl mx-auto -mr-4 -ml-4 md:-mr-8 md:-ml-8 lg:-mr-12 lg:-ml-12 xl:-mr-16 xl:-ml-16 z-20"
 					>
 						<img
-							src="./public/char.png"
+							src="/char.png"
 							className="w-48 md:w-56 lg:w-64 xl:w-[370px] 2xl:w-80"
 						/>
 					</motion.div>
@@ -45,7 +45,7 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
-						src="./public/l-name-logo.png"
+						src="/l-name-logo.png"
 						className="w-64 md:w-72 lg:w-80 xl:w-116 2xl:w-96"
 					/>
 				</div>
@@ -57,7 +57,7 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
-						src="./public/f-name-logo.png"
+						src="/f-name-logo.png"
 						className="w-52"
 					/>
 					{/* Last Name */}
@@ -65,7 +65,7 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
-						src="./public/l-name-logo.png"
+						src="/l-name-logo.png"
 						className="w-52"
 					/>
 					{/* Char - меньше анимации на мобильных */}
@@ -83,7 +83,7 @@ export const MainPage: FC = () => {
 						}}
 						className="flex justify-center items-end z-20"
 					>
-						<img src="./public/char.png" className="w-40" />
+						<img src="/char.png" className="w-40" />
 					</motion.div>
 				</div>
 
@@ -102,14 +102,11 @@ export const MainPage: FC = () => {
 					}}
 					className="relative z-10 flex flex-col items-center max-w-[320px] sm:max-w-[540px] md:max-w-[600px] lg:max-w-[924px] lg:h-[724px] xl:max-w-[1200px] md:px-0 xl:-mt-24 md:-mt-14 lg:-mt-17 sm:-mt-12"
 				>
-					<img src="./public/rippedBG1.png" className="w-full sm:hidden" />
+					<img src="/rippedBG1.png" className="w-full sm:hidden" />
 
 					<div className="sm:flex flex-col hidden">
-						<img src="./public/rippedBG1.png" className="w-full" />
-						<img
-							src="./public/rippedBG1.png"
-							className="w-full rotate-180 -mt-4"
-						/>
+						<img src="/rippedBG1.png" className="w-full" />
+						<img src="/rippedBG1.png" className="w-full rotate-180 -mt-4" />
 					</div>
 
 					{/* Main Card */}
@@ -122,14 +119,14 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-						src="./public/skull1.png"
+						src="/skull1.png"
 						className="absolute z-30 w-32 sm:w-72 md:w-56 lg:w-60 xl:w-[280px] -left-2 sm:-left-36 sm:-bottom-32 md:-left-24 lg:-left-20 xl:-left-10 -rotate-12 md:-rotate-20 xl:-rotate-25 -bottom-76 md:bottom-8 lg:bottom-8 xl:bottom-8 2xl:bottom-32"
 					/>
 					<motion.img
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-						src="./public/skull1.png"
+						src="/skull1.png"
 						className="absolute z-30 w-30 sm:w-72 md:w-52 lg:w-58 xl:w-[300px] -right-2 sm:-right-36 sm:-bottom-32 md:-right-16 lg:-right-12 xl:-right-10 -bottom-76 md:bottom-7 lg:bottom-4 xl:bottom-7 2xl:bottom-32 scale-x-[-1] rotate-12 md:rotate-20 xl:rotate-25"
 					/>
 				</motion.div>
