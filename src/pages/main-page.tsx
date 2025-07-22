@@ -11,7 +11,7 @@ export const MainPage: FC = () => {
 		>
 			{/* New Mobile Layout */}
 			<div className="sm:hidden flex flex-col h-screen">
-				<div className="flex-shrink-0 pt-4 z-20">
+				<div className="flex-shrink-0 pt-3 z-20">
 					<div className="flex flex-col gap-2 z-30 relative">
 						<div className="flex items-center justify-center px-4">
 							{/* Name */}
@@ -69,7 +69,7 @@ export const MainPage: FC = () => {
 						</div>
 
 						{/* Main Card для мобильных */}
-						<div className="absolute top-6 w-full rounded-lg pb-6 bg-zinc-900 pt-2 px-3 flex justify-center min-h-0">
+						<div className="absolute top-6 w-full rounded-lg pb-6 bg-zinc-900 pt-3 px-3 flex justify-center min-h-0">
 							<div className="w-full max-h-full">
 								<Card />
 							</div>

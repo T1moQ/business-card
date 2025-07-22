@@ -3,7 +3,7 @@ import type { FC } from 'react'
 
 export const Card: FC = () => {
 	return (
-		<div className="flex flex-col items-center gap-1.5 sm:gap-2 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-1 xl:px-20 lg:w-full 2xl:gap-2">
+		<div className="flex flex-col items-center gap-0.5 sm:gap-2 md:gap-3 xl:gap-3 text-white w-full px-1 md:px-1 xl:px-20 lg:w-full 2xl:gap-2">
 			{/* Заголовок */}
 			<h2 className="text-xl  sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl alt-regular font-bold leading-tight text-center tracking-tight">
 				Hey everyone, I'm{' '}
@@ -18,7 +18,7 @@ export const Card: FC = () => {
 			</p>
 
 			{/* Основной блок */}
-			<div className="flex flex-col md:flex-row gap-4 md:gap-4 lg:gap-6 xl:gap-8 mt-2 md:mt-1 xl:mt-4 lg:w-full">
+			<div className="flex flex-col md:flex-row gap-3 md:gap-4 lg:gap-6 xl:gap-8 mt-1.5 md:mt-1 xl:mt-4 lg:w-full">
 				{/* About */}
 				<div className="flex-1 leading-relaxed text-center md:text-center flex flex-col gap-1 items-center xl:gap-3 2xl:gap-3 3xl:min-w-140 xl:min-w-120 lg:min-w-120 md:min-w-72">
 					<p className="uppercase alt-regular tracking-widest text-xs sm:text-sm md:text-sm xl:text-lg text-gray-400">
