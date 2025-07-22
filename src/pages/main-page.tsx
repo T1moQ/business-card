@@ -6,13 +6,13 @@ import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 export const MainPage: FC = () => {
 	return (
 		<main
-			className="bg-black overflow-hidden h-[100svh] xs:pb-4 sm:pb-4"
+			className="bg-black overflow-hidden min-h-screen max-h-screen xs:pb-4 sm:pb-4"
 			style={{ userSelect: 'none' }}
 		>
 			{/* New Mobile Layout */}
-			<div className="sm:hidden h-[111vh] xs:h-[118vh]">
-				<div className="relative z-40 flex flex-col items-center pt-3 scale-90 xs:scale-85 origin-top">
-					<div className="flex flex-col items-center px-2">
+			<div className="sm:hidden flex flex-col h-screen">
+				<div className="flex-shrink-0 pt-2 z-20 relative">
+					<div className="flex flex-col items-center px-4 mb-2">
 						{/* Name */}
 						<motion.img
 							initial={{ opacity: 0 }}
@@ -60,29 +60,18 @@ export const MainPage: FC = () => {
 							delay: 1,
 							ease: ['easeIn', 'linear', 'easeOut'],
 						}}
-						className="relative z-10 flex flex-col items-center max-w-[320px]"
+						className="relative z-10 flex flex-col items-center flex-1 w-full px-4 -mt-4"
 					>
-						<img src="/rippedBG1.png" className="w-full" />
+						<div className="w-screen relative -mx-4">
+							<img src="/rippedBG1.png" className="w-full" />
+						</div>
 
 						{/* Main Card для мобильных */}
-						<div className="absolute top-6 w-full rounded-lg pb-6 bg-zinc-900 pt-2 px-5 flex justify-center">
-							<Card />
+						<div className="absolute top-6 w-full rounded-lg pb-6 bg-zinc-900 pt-2 px-3 flex justify-center min-h-0">
+							<div className="w-full max-h-full">
+								<Card />
+							</div>
 						</div>
-						{/* Skulls для мобильных */}
-						<motion.img
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-							src="/skull1.png"
-							className="absolute z-30 w-38 -left-10 -rotate-12 -bottom-76"
-						/>
-						<motion.img
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
-							src="/skull1.png"
-							className="absolute z-30 w-36 -right-8 -bottom-76 scale-x-[-1] rotate-12"
-						/>
 					</motion.div>
 				</div>
 				{/* Mobile Lightning */}
@@ -115,7 +104,7 @@ export const MainPage: FC = () => {
 							animate={{ opacity: 1 }}
 							transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 							src="/f-name-logo.png"
-							className="w-64 md:w-72 lg:w-80 xl:w-116 2xl:w-96 3xl:w-[420px]"
+							className="w-64 md:w-72 lg:w-80 xl:w-116 2xl:w-96 3xl:w-[420px] flex-shrink-0"
 						/>
 						{/* Char */}
 						<motion.div
@@ -143,7 +132,7 @@ export const MainPage: FC = () => {
 							animate={{ opacity: 1 }}
 							transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
 							src="/l-name-logo.png"
-							className="w-64 md:w-72 lg:w-80 xl:w-116 2xl:w-96 3xl:w-[420px]"
+							className="w-64 md:w-72 lg:w-80 xl:w-116 2xl:w-96 3xl:w-[420px] flex-shrink-0"
 						/>
 					</div>
 
@@ -162,14 +151,16 @@ export const MainPage: FC = () => {
 						}}
 						className="relative z-10 flex flex-col items-center sm:max-w-[540px] md:max-w-[600px] lg:max-w-[924px] lg:h-[724px] xl:max-w-[1200px] 3xl:max-w-[1400px] md:px-0 xl:-mt-24 md:-mt-14 lg:-mt-17 sm:-mt-12 3xl:-mt-28"
 					>
-						<div className="flex flex-col">
+						<div className="flex flex-col w-full">
 							<img src="/rippedBG1.png" className="w-full" />
 							<img src="/rippedBG1.png" className="w-full rotate-180 -mt-4" />
 						</div>
 
 						{/* Main Card */}
 						<div className="absolute xl:top-24 lg:top-16 md:top-12 sm:top-12 sm:w-[75%] md:w-[85%] lg:w-[812px] xl:w-[1040px] 3xl:w-[1280px] pb-6 md:pb-8 xl:pb-10 bg-zinc-900 sm:rounded-tr-2xl sm:rounded-tl-2xl lg:rounded-tr-3xl lg:rounded-tl-3xl xl:rounded-tr-4xl xl:rounded-tl-4xl md:pt-5 md:px-4 lg:px-10 xl:px-8 flex justify-center lg:h-[650px] md:h-[80%] lg:pt-8 2xl:pt-5 3xl:pt-8">
-							<Card />
+							<div className="w-full h-full">
+								<Card />
+							</div>
 						</div>
 
 						{/* Skulls - адаптивные позиции */}
