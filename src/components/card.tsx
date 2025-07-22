@@ -112,14 +112,14 @@ export const Card: FC = () => {
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
 				src="/skull1.png"
-				className="absolute z-30 w-38 left-2 -rotate-12 bottom-3 sm:hidden"
+				className="absolute z-30 w-34 -left-2 -rotate-12 bottom-8 sm:hidden"
 			/>
 			<motion.img
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 8, ease: 'easeIn' }}
 				src="/skull1.png"
-				className="absolute z-30 w-36 right-2 bottom-4 scale-x-[-1] rotate-12 sm:hidden"
+				className="absolute z-30 w-32 -right-2 bottom-10 scale-x-[-1] rotate-12 sm:hidden"
 			/>
 		</div>
 	)

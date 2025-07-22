@@ -11,30 +11,32 @@ export const MainPage: FC = () => {
 		>
 			{/* New Mobile Layout */}
 			<div className="sm:hidden flex flex-col h-screen">
-				<div className="flex-shrink-0 pt-2 z-20 relative">
-					<div className="flex flex-col items-center px-4 mb-2">
-						{/* Name */}
-						<motion.img
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
-							src="/f-name-logo.png"
-							className="w-52"
-						/>
-						{/* Last Name */}
-						<motion.img
-							initial={{ opacity: 0 }}
-							animate={{ opacity: 1 }}
-							transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
-							src="/l-name-logo.png"
-							className="w-52"
-						/>
+				<div className="flex-shrink-0 pt-4 z-20">
+					<div className="flex flex-col gap-2 z-30 relative">
+						<div className="flex items-center justify-center px-4">
+							{/* Name */}
+							<motion.img
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
+								src="/f-name-logo.png"
+								className="xs:w-44 w-40"
+							/>
+							{/* Last Name */}
+							<motion.img
+								initial={{ opacity: 0 }}
+								animate={{ opacity: 1 }}
+								transition={{ duration: 3, delay: 6.5, ease: 'easeInOut' }}
+								src="/l-name-logo.png"
+								className="xs:w-44 w-40"
+							/>
+						</div>
 						{/* Char */}
 						<motion.div
-							initial={{ opacity: 0, y: '150vh' }}
+							initial={{ opacity: 0, y: '100vh' }}
 							animate={{
 								opacity: [0, 1, 1, 1],
-								y: ['100vh', '70vh', '70vh', '0vh'],
+								y: ['100vh', '80vh', '80vh', '-1vh'],
 							}}
 							transition={{
 								duration: 6,
@@ -42,7 +44,7 @@ export const MainPage: FC = () => {
 								ease: ['easeIn', 'linear', 'easeOut'],
 								delay: 1,
 							}}
-							className="flex justify-center items-end z-20"
+							className="flex justify-center items-end"
 						>
 							<img src="/char.png" className="w-40" />
 						</motion.div>
@@ -52,7 +54,7 @@ export const MainPage: FC = () => {
 						initial={{ opacity: 0, y: '100vh' }}
 						animate={{
 							opacity: [0, 1, 1, 1],
-							y: ['100vh', '70vh', '70vh', '-4vh'],
+							y: ['100vh', '80vh', '80vh', '-4vh'],
 						}}
 						transition={{
 							duration: 6,
