@@ -18,66 +18,36 @@ textarea,
 	user-select: none;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
 	.desktop-stage {
 		transform-origin: top center;
 	}
 }
 
-@media (min-width: 900px) and (max-height: 1060px) {
+@media (min-width: 1024px) and (max-height: 960px) {
 	.desktop-stage {
-		transform: scale(0.95);
-	}
-}
-
-@media (min-width: 900px) and (max-height: 960px) {
-	.desktop-stage {
-		transform: scale(0.9);
-	}
-
-	.desktop-card-shell {
-		height: auto !important;
-	}
-
-	.desktop-main-card {
-		height: auto !important;
-		top: 2.75rem !important;
-		padding-bottom: 1.25rem !important;
-	}
-
-	.desktop-skull-left,
-	.desktop-skull-right {
-		bottom: 0.25rem !important;
-	}
-}
-
-@media (min-width: 900px) and (max-height: 860px) {
-	.desktop-stage {
-		transform: scale(0.86);
-	}
-
-	.desktop-main-card {
-		top: 2.25rem !important;
-	}
-}
-
-@media (min-width: 900px) and (max-height: 700px) {
-	.desktop-stage {
-		transform: scale(0.8);
-	}
-
-	.desktop-main-card {
-		top: 1.75rem !important;
-		padding-bottom: 0.75rem !important;
-	}
-
-	.desktop-skull-left,
-	.desktop-skull-right {
-		width: 10rem !important;
-		bottom: -1rem !important;
+		transform: scale(0.92);
 	}
 
 	.desktop-wire {
 		display: none !important;
+	}
+}
+
+@media (min-width: 1024px) and (max-height: 900px) {
+	.desktop-stage {
+		transform: scale(0.88);
+	}
+}
+
+@media (min-width: 1024px) and (max-height: 840px) {
+	.desktop-stage {
+		transform: scale(0.84);
+	}
+}
+
+@media (min-width: 1024px) and (max-height: 760px) {
+	.desktop-stage {
+		transform: scale(0.8);
 	}
 }
