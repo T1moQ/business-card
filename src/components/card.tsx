@@ -89,7 +89,7 @@ export const Card: FC = () => {
 			</blockquote>
 
 			<motion.div
-				className="desktop-wire sm:flex -mt-4 lg:mt-5 md:mt-8 xl:-mt-4 3xl:mt-5 hidden xl:hidden overflow-hidden 3xl:flex"
+				className="sm:flex -mt-4 lg:mt-5 md:mt-8 xl:-mt-4 3xl:mt-5 hidden xl:hidden overflow-hidden 3xl:flex"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 3, delay: 10, ease: 'easeIn' }}
