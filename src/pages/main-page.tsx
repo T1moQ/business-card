@@ -6,11 +6,11 @@ import Lightning from '../motion/Backgrounds/Lightning/Lightning'
 export const MainPage: FC = () => {
 	return (
 		<main
-			className="bg-black overflow-hidden min-h-screen max-h-screen xs:pb-4 sm:pb-4"
+			className="bg-black overflow-hidden h-[100dvh] xs:pb-4 sm:pb-4"
 			style={{ userSelect: 'none' }}
 		>
 			{/* New Mobile Layout */}
-			<div className="sm:hidden flex flex-col h-screen">
+			<div className="sm:hidden flex flex-col h-[100dvh]">
 				<div className="flex-shrink-0 pt-3 z-20">
 					<div className="flex flex-col gap-2 z-30 relative">
 						<div className="flex items-center justify-center px-4">
@@ -81,7 +81,7 @@ export const MainPage: FC = () => {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 3, delay: 9, ease: 'easeIn' }}
-					className="absolute inset-0 z-0  h-screen pointer-events-none"
+					className="absolute inset-0 z-0 h-screen pointer-events-none"
 				>
 					<div className="w-full h-full absolute top-0 right-0 z-0">
 						<Lightning
@@ -97,7 +97,7 @@ export const MainPage: FC = () => {
 
 			{/* New Desktop and Tablet Layout */}
 			<div className="hidden sm:block relative z-10 h-full">
-				<div className="flex flex-col items-center pt-3 md:pt-18 xl:pt-14 2xl:pt-6 lg:pt-18 sm:pt-12">
+				<div className="desktop-stage flex flex-col items-center pt-3 md:pt-18 xl:pt-14 2xl:pt-6 lg:pt-18 sm:pt-12">
 					{/* Desktop и планшет layout */}
 					<div className="flex justify-between items-start max-w-screen-2xl 3xl:max-w-[1800px] mx-auto px-4 z-30">
 						{/* Name */}

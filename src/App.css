@@ -17,3 +17,27 @@ textarea,
 	-ms-user-select: none;
 	user-select: none;
 }
+
+@media (min-width: 640px) {
+	.desktop-stage {
+		transform-origin: top center;
+	}
+}
+
+@media (min-width: 640px) and (max-height: 820px) {
+	.desktop-stage {
+		transform: scale(0.93);
+	}
+}
+
+@media (min-width: 640px) and (max-height: 760px) {
+	.desktop-stage {
+		transform: scale(0.88);
+	}
+}
+
+@media (min-width: 640px) and (max-height: 700px) {
+	.desktop-stage {
+		transform: scale(0.82);
+	}
+}

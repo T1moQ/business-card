@@ -14,7 +14,7 @@ function App() {
 	}, [])
 
 	return (
-		<div className="cursor-none h-screen">
+		<div className="cursor-none h-[100dvh]">
 			{showCursor && <Crosshair color="#00ff2a" />}
 			<MainPage />
 		</div>
